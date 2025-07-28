@@ -74,7 +74,6 @@ def perfect_match_part2():
     total = first + second + third
     print(total)
 
-# Split using Rule 1
 def new_five_liner_part1():
     day = "Monday"
     month = "January"
@@ -85,3 +84,57 @@ def new_five_liner_part2():
     day, month, year = new_five_liner_part1()
     date_str = f"{day}, {month} {year}"
     return date_str
+
+def iteration_function_part1():
+    color = "blue"
+    shape = "circle"
+    size = "large"
+    return color, shape, size
+
+def iteration_function_part2():
+    color, shape, size = iteration_function_part1()
+    description = f"A {size} {color} {shape}"
+    return description
+
+def calculation_function_part1():
+    base = 10
+    exponent = 2
+    result = base ** exponent
+    return base, exponent, result
+
+def calculation_function_part2():
+    base, exponent, result = calculation_function_part1()
+    message = f"{base} raised to the power of {exponent} is {result}"
+    return message
+
+def temperature_converter_part1():
+    celsius = 25
+    factor = 9/5
+    offset = 32
+    return celsius, factor, offset
+
+def temperature_converter_part2():
+    celsius, factor, offset = temperature_converter_part1()
+    fahrenheit = celsius * factor + offset
+    return f"{celsius}°C = {fahrenheit}°F"
+
+def list_processor_part1():
+    numbers = [1, 2, 3, 4, 5]
+    squared = [n ** 2 for n in numbers]
+    summed = sum(squared)
+    return numbers, squared, summed
+
+def list_processor_part2():
+    numbers, squared, summed = list_processor_part1()
+    average = summed / len(squared)
+    return f"Average of squared numbers: {average}"
+
+# Modified to have exactly 3 and 2 lines
+def string_manipulator_part1():
+    text = "Python programming"
+    uppercase = text.upper()
+    reversed_text = uppercase[::-1]
+
+def string_manipulator_part2():
+    character_count = len(text)
+    return f"{reversed_text} has {character_count} characters"
